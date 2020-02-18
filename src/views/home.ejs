@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="./javascripts/a.js"></script>
+    <script>
+        var detail = $.ajax({
+        url: 'https://storiette-api.azurewebsites.net/detail',
+        type: 'POST',
+        data:{
+            id: 1
+        }
+        })
+ 
+
+    </script>
+</head>
+<body>
+    
+    <form action="/story" method="get">
+        <input type="text" name="pass" id="pass">
+        <input type="submit" value="check">
+    </form>
+    <p id="ok"></p>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed illum libero fugiat consequuntur maxime ad vel consectetur natus, doloribus voluptatem exercitationem blanditiis dolorum culpa corrupti autem. Quae delectus explicabo nostrum?
+    <audio src='./audio/1.m4a' id="audio"></audio>
+
+
+</body>
+</html>
